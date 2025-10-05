@@ -19,6 +19,9 @@ namespace ClubDeportivo
 
         private void btnAfiliado_Click(object sender, EventArgs e)
         {
+            FrmAfiliadoMensual frmAfiliado = new FrmAfiliadoMensual();
+            frmAfiliado.Show();
+            this.Hide();
 
         }
 

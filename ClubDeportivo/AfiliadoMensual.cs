@@ -71,14 +71,14 @@ namespace ClubDeportivo
 
             int renglon = dtgvAfiliadoMensual.Rows.Add();
 
-            dtgvAfiliadoMensual.Rows[renglon].Cells[0].Value = nuevoAfiliado.IdAfiliado;
-            dtgvAfiliadoMensual.Rows[renglon].Cells[1].Value = nuevoAfiliado.Nombre;
-            dtgvAfiliadoMensual.Rows[renglon].Cells[2].Value = nuevoAfiliado.Apellido;
-            dtgvAfiliadoMensual.Rows[renglon].Cells[3].Value = nuevoAfiliado.Tipo;
-            dtgvAfiliadoMensual.Rows[renglon].Cells[4].Value = nuevoAfiliado.Documento;
-            dtgvAfiliadoMensual.Rows[renglon].Cells[5].Value = nuevoAfiliado.Telefono;
-            dtgvAfiliadoMensual.Rows[renglon].Cells[6].Value = nuevoAfiliado.Email;
-            dtgvAfiliadoMensual.Rows[renglon].Cells[7].Value = nuevoAfiliado.AptoFisico ? "Sí" : "No";
+            dtgvAfiliadoMensual.Rows[renglon].Cells[0].Value = nuevoAfiliado.Nombre;
+            dtgvAfiliadoMensual.Rows[renglon].Cells[1].Value = nuevoAfiliado.Apellido;
+            dtgvAfiliadoMensual.Rows[renglon].Cells[2].Value = nuevoAfiliado.Tipo;
+            dtgvAfiliadoMensual.Rows[renglon].Cells[3].Value = nuevoAfiliado.Documento;
+            dtgvAfiliadoMensual.Rows[renglon].Cells[4].Value = nuevoAfiliado.Telefono;
+            dtgvAfiliadoMensual.Rows[renglon].Cells[5].Value = nuevoAfiliado.Email;
+            dtgvAfiliadoMensual.Rows[renglon].Cells[6].Value = nuevoAfiliado.AptoFisico ? "Sí" : "No";
+            dtgvAfiliadoMensual.Rows[renglon].Cells[7].Value = nuevoAfiliado.IdAfiliado;
             //MessageBox.Show("Afiliado ingresado correctamente.");
 
             txtNombre.Text = "";

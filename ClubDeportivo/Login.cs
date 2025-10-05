@@ -63,7 +63,7 @@ namespace ClubDeportivo
             if (txtUsuario.Text == "USUARIO")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.LightGray;
+                txtUsuario.ForeColor = Color.Black;
             }
         }
 
@@ -72,7 +72,7 @@ namespace ClubDeportivo
             if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "USUARIO";
-                txtUsuario.ForeColor = Color.Silver;
+                txtUsuario.ForeColor = Color.Gray;
             }
         }
 
@@ -81,7 +81,7 @@ namespace ClubDeportivo
             if (txtPass.Text == "CONTRASEÑA")
             {
                 txtPass.Text = "";
-                txtPass.ForeColor = Color.LightGray;
+                txtPass.ForeColor = Color.Gray;
                 txtPass.UseSystemPasswordChar = true;
             }
         }
@@ -91,7 +91,7 @@ namespace ClubDeportivo
             if (txtPass.Text == "")
             {
                 txtPass.Text = "CONTRASEÑA";
-                txtPass.ForeColor = Color.Silver;
+                txtPass.ForeColor = Color.Gray;
                 txtPass.UseSystemPasswordChar = false;
             }
         }
