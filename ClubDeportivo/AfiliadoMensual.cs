@@ -119,5 +119,12 @@ namespace ClubDeportivo
         {
 
         }
+
+        private void btnVolverOpciones_Click(object sender, EventArgs e)
+        {
+            FrmOpciones frmOpciones = new FrmOpciones();
+            frmOpciones.Show();
+            this.Hide();
+        }
     }
 }

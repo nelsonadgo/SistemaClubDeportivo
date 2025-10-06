@@ -31,6 +31,7 @@
             btnAfiliado = new Button();
             btnLista = new Button();
             btnActividad = new Button();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // btnAfiliado
@@ -45,7 +46,7 @@
             // 
             // btnLista
             // 
-            btnLista.Location = new Point(274, 271);
+            btnLista.Location = new Point(93, 268);
             btnLista.Name = "btnLista";
             btnLista.Size = new Size(250, 132);
             btnLista.TabIndex = 1;
@@ -63,12 +64,24 @@
             btnActividad.UseVisualStyleBackColor = true;
             btnActividad.Click += btnActividad_Click;
             // 
+            // btnSalir
+            // 
+            btnSalir.BackColor = Color.OrangeRed;
+            btnSalir.Location = new Point(447, 268);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(250, 132);
+            btnSalir.TabIndex = 4;
+            btnSalir.Text = "SALIR";
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // FrmOpciones
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.CornflowerBlue;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalir);
             Controls.Add(btnActividad);
             Controls.Add(btnLista);
             Controls.Add(btnAfiliado);
@@ -83,5 +96,6 @@
         private Button btnAfiliado;
         private Button btnLista;
         private Button btnActividad;
+        private Button btnSalir;
     }
 }

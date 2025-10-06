@@ -34,5 +34,12 @@ namespace ClubDeportivo
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Hide();
+        }
     }
 }

@@ -39,12 +39,6 @@
             btnIngresar = new Button();
             btnLimpiar = new Button();
             dtgvAfiliadoMensual = new DataGridView();
-            lblTelefono = new Label();
-            lblEmail = new Label();
-            txtTelefono = new TextBox();
-            txtEmail = new TextBox();
-            lblAptoF = new Label();
-            chkAptoF = new CheckBox();
             Nombre = new DataGridViewTextBoxColumn();
             Apellido = new DataGridViewTextBoxColumn();
             Tipo = new DataGridViewTextBoxColumn();
@@ -53,6 +47,13 @@
             Email = new DataGridViewTextBoxColumn();
             AptoFisico = new DataGridViewTextBoxColumn();
             IdAfiliado = new DataGridViewTextBoxColumn();
+            lblTelefono = new Label();
+            lblEmail = new Label();
+            txtTelefono = new TextBox();
+            txtEmail = new TextBox();
+            lblAptoF = new Label();
+            chkAptoF = new CheckBox();
+            btnVolverOpciones = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgvAfiliadoMensual).BeginInit();
             SuspendLayout();
             // 
@@ -165,62 +166,6 @@
             dtgvAfiliadoMensual.TabIndex = 10;
             dtgvAfiliadoMensual.CellContentClick += dtgvAfiliadoMensual_CellContentClick;
             // 
-            // lblTelefono
-            // 
-            lblTelefono.AutoSize = true;
-            lblTelefono.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTelefono.Location = new Point(118, 226);
-            lblTelefono.Name = "lblTelefono";
-            lblTelefono.Size = new Size(117, 32);
-            lblTelefono.TabIndex = 11;
-            lblTelefono.Text = "Telefono";
-            // 
-            // lblEmail
-            // 
-            lblEmail.AutoSize = true;
-            lblEmail.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEmail.Location = new Point(147, 277);
-            lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(88, 32);
-            lblEmail.TabIndex = 12;
-            lblEmail.Text = "E-Mail";
-            // 
-            // txtTelefono
-            // 
-            txtTelefono.Location = new Point(349, 229);
-            txtTelefono.Name = "txtTelefono";
-            txtTelefono.Size = new Size(290, 31);
-            txtTelefono.TabIndex = 13;
-            txtTelefono.TextChanged += txtTelefono_TextChanged;
-            // 
-            // txtEmail
-            // 
-            txtEmail.Location = new Point(349, 280);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(290, 31);
-            txtEmail.TabIndex = 14;
-            txtEmail.TextChanged += txtEmail_TextChanged;
-            // 
-            // lblAptoF
-            // 
-            lblAptoF.AutoSize = true;
-            lblAptoF.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAptoF.Location = new Point(93, 323);
-            lblAptoF.Name = "lblAptoF";
-            lblAptoF.Size = new Size(142, 32);
-            lblAptoF.TabIndex = 15;
-            lblAptoF.Text = "Apto Fisico";
-            // 
-            // chkAptoF
-            // 
-            chkAptoF.AutoSize = true;
-            chkAptoF.Location = new Point(349, 328);
-            chkAptoF.Name = "chkAptoF";
-            chkAptoF.Size = new Size(22, 21);
-            chkAptoF.TabIndex = 16;
-            chkAptoF.UseVisualStyleBackColor = true;
-            chkAptoF.CheckedChanged += chkAptoF_CheckedChanged;
-            // 
             // Nombre
             // 
             Nombre.HeaderText = "Nombre";
@@ -283,13 +228,83 @@
             IdAfiliado.MinimumWidth = 8;
             IdAfiliado.Name = "IdAfiliado";
             IdAfiliado.ReadOnly = true;
+            IdAfiliado.Width = 150;
+            // 
+            // lblTelefono
+            // 
+            lblTelefono.AutoSize = true;
+            lblTelefono.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTelefono.Location = new Point(118, 226);
+            lblTelefono.Name = "lblTelefono";
+            lblTelefono.Size = new Size(117, 32);
+            lblTelefono.TabIndex = 11;
+            lblTelefono.Text = "Telefono";
+            // 
+            // lblEmail
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEmail.Location = new Point(147, 277);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(88, 32);
+            lblEmail.TabIndex = 12;
+            lblEmail.Text = "E-Mail";
+            // 
+            // txtTelefono
+            // 
+            txtTelefono.Location = new Point(349, 229);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(290, 31);
+            txtTelefono.TabIndex = 13;
+            txtTelefono.TextChanged += txtTelefono_TextChanged;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(349, 280);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(290, 31);
+            txtEmail.TabIndex = 14;
+            txtEmail.TextChanged += txtEmail_TextChanged;
+            // 
+            // lblAptoF
+            // 
+            lblAptoF.AutoSize = true;
+            lblAptoF.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAptoF.Location = new Point(93, 323);
+            lblAptoF.Name = "lblAptoF";
+            lblAptoF.Size = new Size(142, 32);
+            lblAptoF.TabIndex = 15;
+            lblAptoF.Text = "Apto Fisico";
+            // 
+            // chkAptoF
+            // 
+            chkAptoF.AutoSize = true;
+            chkAptoF.Location = new Point(349, 328);
+            chkAptoF.Name = "chkAptoF";
+            chkAptoF.Size = new Size(22, 21);
+            chkAptoF.TabIndex = 16;
+            chkAptoF.UseVisualStyleBackColor = true;
+            chkAptoF.CheckedChanged += chkAptoF_CheckedChanged;
+            // 
+            // btnVolverOpciones
+            // 
+            btnVolverOpciones.BackColor = Color.OrangeRed;
+            btnVolverOpciones.Font = new Font("Segoe UI Emoji", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVolverOpciones.Location = new Point(1075, 113);
+            btnVolverOpciones.Name = "btnVolverOpciones";
+            btnVolverOpciones.Size = new Size(170, 119);
+            btnVolverOpciones.TabIndex = 17;
+            btnVolverOpciones.Text = "VOLVER A OPCIONES";
+            btnVolverOpciones.UseVisualStyleBackColor = false;
+            btnVolverOpciones.Click += btnVolverOpciones_Click;
             // 
             // FrmAfiliadoMensual
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(255, 224, 192);
+            BackColor = Color.CornflowerBlue;
             ClientSize = new Size(1272, 515);
+            Controls.Add(btnVolverOpciones);
             Controls.Add(chkAptoF);
             Controls.Add(lblAptoF);
             Controls.Add(txtEmail);
@@ -342,5 +357,6 @@
         private DataGridViewTextBoxColumn Email;
         private DataGridViewTextBoxColumn AptoFisico;
         private DataGridViewTextBoxColumn IdAfiliado;
+        private Button btnVolverOpciones;
     }
 }

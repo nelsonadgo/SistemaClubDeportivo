@@ -85,7 +85,7 @@ namespace ClubDeportivo
                 txtPass.UseSystemPasswordChar = true;
             }
         }
-
+        
         private void txtPass_Leave(object sender, EventArgs e)
         {
             if (txtPass.Text == "")
@@ -95,5 +95,7 @@ namespace ClubDeportivo
                 txtPass.UseSystemPasswordChar = false;
             }
         }
+
+       
     }
 }

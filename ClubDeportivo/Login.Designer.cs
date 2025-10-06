@@ -126,7 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.WhiteSmoke;
+            BackColor = Color.CornflowerBlue;
             ClientSize = new Size(800, 450);
             Controls.Add(btnBorrar);
             Controls.Add(picClubDep);
